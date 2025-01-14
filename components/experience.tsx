@@ -9,7 +9,7 @@ export function Experience() {
     {
       title: "Software Developer Intern",
       company: "JIS College of Engineering",
-      period: "November 2024 - Present",
+      period: "Nov 2024 - Present",
       description: [
         "Developing web applications for the college's online learning platform",
         "Implementing and optimizing neural network models for student projects",
@@ -19,7 +19,7 @@ export function Experience() {
     {
       title: "Python Developer Intern",
       company: "Innobyte Services",
-      period: "August 2024 - September 2024",
+      period: "Aug 2024 - Sep 2024",
       description: [
         "Developed Python scripts for automating data processing tasks",
         "Learnt about industry best practices in software development"
