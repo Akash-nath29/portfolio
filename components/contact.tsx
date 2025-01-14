@@ -44,7 +44,7 @@ export function Contact() {
           </div>
           <form className="space-y-6" action={"https://formsubmit.co/devakash2905@gmail.com"} method="POST">
           {/* captcha */}
-          <Input type="hidden" name="_captcha" value={false} />
+          <Input type="hidden" name="_captcha" value="false" />
 
           {/* honeypot */}
           <Input type="text" name="_honey" className="hidden" />
