@@ -22,7 +22,7 @@ export default function ViewPost() {
 
         async function fetchBlog() {
             const { data, error } = await supabase
-                .from<Blog>("blogs")
+                .from("blogs")
                 .select("*")
                 .eq("id", id)
                 .single(); // Fetch a single blog

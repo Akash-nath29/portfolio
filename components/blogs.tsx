@@ -21,7 +21,7 @@ export function Blogs() {
   useEffect(() => {
     async function fetchBlogs() {
       const { data, error } = await supabase
-        .from<Blog>("blogs")
+        .from("blogs")
         .select("*")
         .order("created_at", { ascending: false });
 
