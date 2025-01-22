@@ -9,21 +9,22 @@ type Blog = {
     created_at: string;
     title: string;
     content: string;
+    uid: string;
 };
 
 export default function ViewPost() {
     const [blog, setBlog] = useState<Blog | null>(null);
     const [error, setError] = useState<string | null>(null);
-    const { id } = useParams(); // Use useParams to get dynamic route params
+    const { uid } = useParams(); // Use useParams to get dynamic route params
 
     useEffect(() => {
-        if (!id) return;
+        if (!uid) return;
 
         async function fetchBlog() {
             const { data, error } = await supabase
                 .from("blogs") // Table name as a string
                 .select("*")
-                .eq("id", id)
+                .eq("uid", uid)
                 .single(); // Fetch the blog with the matching `id`
 
             if (error) {
@@ -35,7 +36,7 @@ export default function ViewPost() {
         }
 
         fetchBlog();
-    }, [id]);
+    }, [uid]);
 
     if (error) {
         return <p className="text-red-500">{error}</p>;
