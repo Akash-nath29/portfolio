@@ -57,7 +57,7 @@ export function Blogs() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Link href={`/viewpost/${blog.uid}`}>
+                <Link href={`/blog/${blog.uid}`}>
                   <Card className="bg-white/5 border-white/10 cursor-pointer">
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
