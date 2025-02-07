@@ -51,16 +51,16 @@ export function Contact() {
 
             <Input
               placeholder="Your Name"
-              className="bg-white/5 border-white/10"
+              className="name bg-white/5 border-white/10"
             />
             <Input
               type="email"
               placeholder="Your Email"
-              className="bg-white/5 border-white/10"
+              className="email bg-white/5 border-white/10"
             />
             <Textarea
               placeholder="Your Message"
-              className="bg-white/5 border-white/10 min-h-[150px]"
+              className="message bg-white/5 border-white/10 min-h-[150px]"
             />
             <Button className="w-full bg-purple-500 hover:bg-purple-600">
               Send Message
