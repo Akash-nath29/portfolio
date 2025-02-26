@@ -8,6 +8,7 @@ import { Testimonials } from "@/components/testimonials"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import { Blogs } from "@/components/blogs"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Testimonials />
       <Contact />
       <Footer />
+      <Analytics />
     </main>
   )
 }
